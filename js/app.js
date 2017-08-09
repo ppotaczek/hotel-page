@@ -131,6 +131,23 @@ $(document).ready(function() {
       $("#stopSpa").one("click", spaHandler1);
       $("#stopConf").one("click", confHandler1);
     },
+    
+    scroll: function(){
+      var links = $(".mainMenu a");
+      links.click(function() {
+        var id = $(this).attr("href");
+        var menuH = $(".menu").height();
+        if (id.length > 1){
+          $('html, body').animate({
+              scrollTop: $(id).offset().top-menuH
+          }, 800);
+        }else {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 800);
+        }
+      });
+    },
 
     main: function(){
       this.hamburgerMenu();
@@ -139,6 +156,7 @@ $(document).ready(function() {
       this.checkbox();
       this.imageNavigation();
       this.autoSlider();
+      this.scroll();
     }
   }
 
