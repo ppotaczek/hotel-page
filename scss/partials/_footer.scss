@@ -1,0 +1,55 @@
+.pageFooter {
+  
+  .footerLeft {
+    span {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 300;
+      vertical-align: middle;
+      margin: 7.7% -3% 7.7% 10.5%;
+    }
+    span:first-of-type {
+      font-size: 14px;
+      margin: 7.7% 8.5%;
+      line-height: 22px;
+    }
+  }
+
+  .footerRight {
+    text-align: right;
+    .media {
+      background-image: url("../img/media.png");
+      display: inline-block;
+      width: 69px;
+      height: 66px;
+      vertical-align: middle;
+      &:hover {
+        cursor: pointer;
+        filter: invert(95%);
+      }
+    }
+    .media2 {
+      background-position: 207px 0;
+    }
+    .media3 {
+      background-position: 138px 0;
+    }
+    .media4 {
+      background-position: 69px 0;
+    }
+    span {
+      vertical-align: middle;
+      font-weight: 800;
+      font-size: 15px;
+      margin-left: 8.5%;
+    }
+    .arrowTop {
+      background-image: url("../img/return.png");
+      vertical-align: middle;
+      display: inline-block;
+      width: 54px;
+      height: 54px;
+      margin: 7.7% 9.5% 7.7% 4%;
+    }
+  }
+}

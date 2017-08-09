@@ -1,0 +1,66 @@
+#threeLines {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  cursor: pointer;
+  transition: all 600ms ease;
+  #el {
+    cursor: pointer;
+    width: 40px;
+    padding: 0px;
+    height: 3px;
+    background: black;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px transparent;
+    text-indent: -999px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    margin-top: -1px;
+    -webkit-appearance: none;
+    line-height: 0px;
+    transition: all 300ms ease;
+    border-radius: 99px;
+    &:active, &:focus{
+      outline: 0px;
+      border: 0px;
+    }
+    &::after, &::before{
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0px;
+      height: 3px;
+      background: black;
+      width: 100%;
+      transition: all 300ms ease;
+      border-radius: 99px;
+    }
+    &::after{
+      top: -15px;
+      }
+    &::before{
+      bottom: -15px;
+      left: auto;
+      right: 0px;
+      }
+  }
+
+  &.active {
+    transform: rotate(360deg);
+    #el {
+      background:transparent;
+      &:after {
+        transform: rotate(-135deg) translate(-10px, -10px) scale(1.2,1.2);
+      }
+      &:before {
+        transform: rotate(135deg) translate(-10px, 10px) scale(1.2,1.2);
+      }
+    }
+  }
+}
+
+.visible {
+  display: block !important;
+}

@@ -1,0 +1,124 @@
+.contact {
+  .map {
+    height: 500px;
+  }
+  .contactRight {
+    height: 810px;
+
+    .adress {
+      position: relative;
+      height: 50%;
+      color: $textOnBg;
+      background-image: url("../img/contact.png");
+
+      .adressLeft {
+        display: inline-block;
+        padding: 8.5% 0 8.5% 8%;
+        line-height: 36px;
+        p {
+          display: inline-block;
+          font-weight: 800;
+          font-size: 1.2vw;
+          margin-top: 34px;
+          margin-right: 20%;
+          letter-spacing: 2.3px;
+          @media screen and (max-width: 1023px) {
+            font-size: 18px;
+          }
+        }
+        p:first-of-type {
+          font-weight: 300;
+          margin: 0;
+          margin-right: 20%;
+          letter-spacing: normal;
+        }
+      }
+
+      .adressRight {
+        position: absolute;
+        border: 1px solid $textOnBg;
+        top: 17%;
+        right: 7%;
+        padding: 6% 11.5% 8% 11.5%;
+        text-align: center;
+        line-height: 50px;
+
+        h5 {
+          font-weight: 800;
+          font-size: 2vw;
+          letter-spacing: 7px;
+        }
+        p {
+          font-weight: 300;
+          font-size: 1.6vw;
+        }
+      }
+    }
+    
+    .order {
+      height: 50%;
+      box-sizing: border-box;
+      background-color: $BgDark;
+      color: $textOnBg;
+      text-align: center;
+      padding: 82px 0 35px 28px;
+
+      h5 {
+        font-weight: 200;
+        font-size: 36px;
+        letter-spacing: 7px;
+        margin-bottom: 24px;
+
+      }
+      p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 36px;
+        margin-bottom: 37px;
+      }
+      input:first-of-type {
+        box-sizing: border-box;
+        vertical-align: top;
+        display: inline-block;
+        height: 54px;
+        width: 285px;
+        margin-left: 12px;
+        padding-left: 20px;
+        font-size: 18px;
+        font-weight: 300;
+      }
+      button {
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        height: 54px;
+        font-size: 15px;
+        color: $textOnBg;
+        font-weight: 800;
+        border: 0px;
+        letter-spacing: -0.75px;
+        background-color: $btnBg;
+        padding: 15px 47px;
+        margin-left: -5px;
+        margin-bottom: 20px;
+      }
+      .checkbox {
+        cursor: pointer;
+        box-sizing: border-box;
+        background-position: 23px 0;
+        height: 23px;
+        width: 23px;
+        background-image: url("../img/check_box.png");
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .checked {
+        background-position: 23px 23px;
+      }
+      span {
+        font-weight: 300;
+        font-size: 18px;
+      }
+    }
+  }
+}

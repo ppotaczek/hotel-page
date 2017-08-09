@@ -1,0 +1,118 @@
+.packages {
+  .col-12 {
+    text-align: center;
+
+    h2 {
+      font-weight: 200;
+      font-size: 3.7vw;
+      color: $headerDark;
+      padding: 62px 0 19px 0;
+      letter-spacing: 13px;
+    }
+    span {
+      font-weight: 300;
+      font-size: 24px;
+      letter-spacing: 2.6px;
+    }
+
+    @media screen and (max-width: 999px) {
+      h2 {
+        font-size: 42px;
+      }
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .packageImages {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 55px;
+    white-space: nowrap;
+    padding: 0 14%;
+
+    @media screen and (max-width: 1023px) {
+      padding: 0;
+    }
+
+    .imageContainer {
+      box-sizing: border-box;
+      display: inline-block;
+      padding: 0 10px;
+      width: 33%;
+
+      .image {
+        width: 100%;
+        overflow: hidden;
+        background-color: $dark;
+        position: relative;
+        button {
+          display: none;
+          position: absolute;
+          cursor: pointer;
+          @include prefix(transform, translate(-50%, -50%), webkit ms moz);
+          top: 50%;
+          left: 50%;
+          background-color: rgba(0, 0, 0, 0);
+          font-weight: 800;
+          font-size: 15px;
+          border: 1px solid $textOnBg;
+          color: $textOnBg;
+          padding: 15px 50px;
+          z-index: 9;
+        }
+
+        img {
+          display: block;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+        &:hover {
+          button {
+            display: block;
+          }
+          img {
+            @include prefix(transform, scale(1.2), webkit ms moz);
+            filter: opacity(80%);
+          }
+        }
+      }
+
+      h3 {
+        font-size: 1.25vw;
+        font-weight: 800;
+        color: $BgDark;
+        margin-top: 30px;
+        letter-spacing: 2.3px;
+      }
+    }
+
+    .arrow {
+      @include prefix(transform, translateY(-50%), webkit ms moz);
+      cursor: pointer;
+      top: 46%;
+      position: absolute;
+      font-size: 40px;
+      width: 60px;
+      height: 117px;
+      background-image: url("../img/arrows.png");
+
+      @media screen and (max-width: 1023px) {
+        position: static;
+        float: left;
+        margin: 15% 10% 0 10%;
+      }
+    }
+    
+    .leftArrow {
+      left: 5%;
+      background-position: 0 117px;
+    }
+    .rightArrow {
+      right: 5%;
+      float: right;
+    }
+  }
+}

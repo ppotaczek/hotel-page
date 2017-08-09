@@ -1,0 +1,42 @@
+.grid-12 {
+  .row {
+    &:before, &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  .col-1 {
+    width: 8.333%;
+    float: left;
+  }
+  .col-2 {
+    width: 16.666%;
+    float: left;
+  }
+  .col-5 {
+    width: 41.666%;
+    float: left;
+  }
+  .col-6 {
+    width: 50%;
+    float: left;
+
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+    }
+  }
+  .col-10 {
+    width: 83.333%;
+    float: left;
+  }
+  .col-12 {
+    width: 100%;
+    float: left;
+    &:before, &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+}

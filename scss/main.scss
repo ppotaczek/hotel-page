@@ -1,0 +1,22 @@
+// Modules
+
+@import "modules/reset";
+@import "modules/variables";
+@import "modules/grid";
+@import "modules/placeholders";
+
+// Partials
+
+@import "partials/header";
+@import "partials/hamburger_menu";
+@import "partials/packages";
+@import "partials/sections";
+@import "partials/contact";
+@import "partials/footer";
+
+// All
+
+body {
+  box-sizing: border-box;
+  font-family: $font;
+}
